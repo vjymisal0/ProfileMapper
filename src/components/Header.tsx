@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ onAdminClick }) => {
           <div className="flex items-center space-x-3">
             <Map className="h-8 w-8 text-primary-600" />
             <div>
-              <h1 className="text-xl font-semibold text-gray-900">ProfileMapper</h1>
+              <h1 className="text-xl font-semibold text-gray-900">Mapfolio</h1>
               <p className="text-xs text-gray-500">Interactive Profile Explorer</p>
             </div>
           </div>

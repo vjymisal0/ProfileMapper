@@ -13,8 +13,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'priya.sharma@email.com',
-      phone: '+91 98765 43210',
-      linkedin: 'https://linkedin.com/in/priyasharma'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/priyasharma'
     },
     skills: ['Digital Marketing', 'Brand Strategy', 'Content Marketing', 'Social Media'],
     interests: ['Technology', 'Startup Ecosystem', 'Digital Innovation']
@@ -31,8 +31,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'arjun.patel@email.com',
-      phone: '+91 98765 12345',
-      linkedin: 'https://linkedin.com/in/arjunpatel'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/arjunpatel'
     },
     skills: ['Cloud Architecture', 'Microservices', 'Kubernetes', 'Go', 'Python'],
     interests: ['Open Source', 'Cloud Computing', 'DevOps']
@@ -49,8 +49,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'zara.khan@email.com',
-      phone: '+91 98765 98765',
-      linkedin: 'https://linkedin.com/in/zarakhan'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/zarakhan'
     },
     skills: ['Machine Learning', 'Python', 'TensorFlow', 'Healthcare Analytics'],
     interests: ['AI in Healthcare', 'Medical Research', 'Data Ethics']
@@ -67,8 +67,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'vikram.reddy@email.com',
-      phone: '+91 98765 56789',
-      linkedin: 'https://linkedin.com/in/vikramreddy'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/vikramreddy'
     },
     skills: ['UI Design', 'User Research', 'Figma', 'Design Systems'],
     interests: ['Mobile UX', 'Design Thinking', 'Accessibility']
@@ -85,8 +85,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'ananya.mehta@email.com',
-      phone: '+91 98765 34567',
-      linkedin: 'https://linkedin.com/in/ananyamehta'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/ananyamehta'
     },
     skills: ['Financial Modeling', 'Valuation', 'Market Analysis', 'Excel'],
     interests: ['Fintech', 'Venture Capital', 'Economic Policy']
@@ -103,8 +103,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'ritu.verma@email.com',
-      phone: '+91 98765 87654',
-      linkedin: 'https://linkedin.com/in/rituverma'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/rituverma'
     },
     skills: ['Product Management', 'Agile', 'User Stories', 'Roadmapping'],
     interests: ['E-commerce', 'Agile Methodologies', 'Travel']
@@ -121,8 +121,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'sandeep.singh@email.com',
-      phone: '+91 98765 11223',
-      linkedin: 'https://linkedin.com/in/sandeepsingh'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/sandeepsingh'
     },
     skills: ['Logistics', 'Supply Chain', 'Team Leadership', 'Process Optimization'],
     interests: ['Supply Chain Tech', 'Cycling', 'Startups']
@@ -139,8 +139,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'meera.nair@email.com',
-      phone: '+91 98765 99887',
-      linkedin: 'https://linkedin.com/in/meeranair'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/meeranair'
     },
     skills: ['Talent Acquisition', 'Employee Engagement', 'HR Analytics', 'Onboarding'],
     interests: ['People Analytics', 'Yoga', 'Community Service']
@@ -157,8 +157,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'rahul.deshmukh@email.com',
-      phone: '+91 98765 44332',
-      linkedin: 'https://linkedin.com/in/rahuldeshmukh'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/rahuldeshmukh'
     },
     skills: ['CAD', 'EV Design', 'Manufacturing', 'Project Management'],
     interests: ['Electric Vehicles', 'Robotics', 'Cricket']
@@ -175,8 +175,8 @@ export const profiles: Profile[] = [
     },
     contact: {
       email: 'sneha.joshi@email.com',
-      phone: '+91 98765 55667',
-      linkedin: 'https://linkedin.com/in/snehajoshi'
+      phone: '+91 9xxxx xxxxx',
+      linkedin: 'https://linkedin.in/snehajoshi'
     },
     skills: ['Education Management', 'Curriculum Design', 'Leadership', 'Teacher Training'],
     interests: ['Education Policy', 'Reading', 'Gardening']
