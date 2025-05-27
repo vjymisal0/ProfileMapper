@@ -10,32 +10,30 @@ interface ProfileDetailsProps {
 const ProfileDetails: React.FC<ProfileDetailsProps> = ({ profile, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl my-8 relative overflow-hidden transform transition-all">
-        <div className="relative h-64 md:h-80">
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-xl my-8 relative overflow-hidden transform transition-all max-h-[80vh]">
+        <div className="relative flex flex-col items-center justify-center p-4">
           <img
             src={profile.photo}
             alt={profile.name}
-            className="w-full h-full object-cover"
+            className="w-auto max-w-xs max-h-48 object-contain rounded-xl border border-gray-200 shadow"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2.5 bg-white/10 backdrop-blur-md rounded-full 
-                     hover:bg-white/20 transition-all duration-300 text-white"
+            className="absolute top-4 right-4 p-2.5 bg-white/80 backdrop-blur-md rounded-full 
+                     hover:bg-gray-200 transition-all duration-300 text-gray-700 shadow"
             aria-label="Close details"
           >
             <X size={20} />
           </button>
-          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <h2 className="text-3xl font-bold mb-2">{profile.name}</h2>
-            <div className="flex items-center space-x-2 text-white/80">
+          <div className="w-full mt-3 text-center">
+            <h2 className="text-2xl font-bold mb-1">{profile.name}</h2>
+            <div className="flex items-center justify-center space-x-2 text-gray-600">
               <Tag size={16} />
               <span>{profile.skills?.[0]}</span>
             </div>
           </div>
         </div>
-
-        <div className="p-6 space-y-6">
+        <div className="p-4 space-y-4 overflow-y-auto max-h-60">
           <div className="prose max-w-none">
             <p className="text-gray-700 text-lg leading-relaxed">{profile.description}</p>
           </div>

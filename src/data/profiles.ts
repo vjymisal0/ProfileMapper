@@ -90,5 +90,95 @@ export const profiles: Profile[] = [
     },
     skills: ['Financial Modeling', 'Valuation', 'Market Analysis', 'Excel'],
     interests: ['Fintech', 'Venture Capital', 'Economic Policy']
+  },
+  {
+    id: '6',
+    name: 'Ritu Verma',
+    description: 'Product Manager at a leading e-commerce company, passionate about building scalable consumer products.',
+    photo: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=800',
+    address: 'Salt Lake, Kolkata, West Bengal',
+    coordinates: {
+      longitude: 88.4312,
+      latitude: 22.5726
+    },
+    contact: {
+      email: 'ritu.verma@email.com',
+      phone: '+91 98765 87654',
+      linkedin: 'https://linkedin.com/in/rituverma'
+    },
+    skills: ['Product Management', 'Agile', 'User Stories', 'Roadmapping'],
+    interests: ['E-commerce', 'Agile Methodologies', 'Travel']
+  },
+  {
+    id: '7',
+    name: 'Sandeep Singh',
+    description: 'Operations Head at a logistics startup, optimizing supply chains across North India.',
+    photo: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800',
+    address: 'Sector 62, Noida, Uttar Pradesh',
+    coordinates: {
+      longitude: 77.3637,
+      latitude: 28.6270
+    },
+    contact: {
+      email: 'sandeep.singh@email.com',
+      phone: '+91 98765 11223',
+      linkedin: 'https://linkedin.com/in/sandeepsingh'
+    },
+    skills: ['Logistics', 'Supply Chain', 'Team Leadership', 'Process Optimization'],
+    interests: ['Supply Chain Tech', 'Cycling', 'Startups']
+  },
+  {
+    id: '8',
+    name: 'Meera Nair',
+    description: 'HR Business Partner at a multinational IT firm, focusing on talent acquisition and employee engagement.',
+    photo: 'https://images.pexels.com/photos/8171190/pexels-photo-8171190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    address: 'Infopark, Kochi, Kerala',
+    coordinates: {
+      longitude: 76.3570,
+      latitude: 10.0159
+    },
+    contact: {
+      email: 'meera.nair@email.com',
+      phone: '+91 98765 99887',
+      linkedin: 'https://linkedin.com/in/meeranair'
+    },
+    skills: ['Talent Acquisition', 'Employee Engagement', 'HR Analytics', 'Onboarding'],
+    interests: ['People Analytics', 'Yoga', 'Community Service']
+  },
+  {
+    id: '9',
+    name: 'Rahul Deshmukh',
+    description: 'Mechanical Engineer working on electric vehicle design and manufacturing.',
+    photo: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800',
+    address: 'MIDC, Pune, Maharashtra',
+    coordinates: {
+      longitude: 73.8567,
+      latitude: 18.5204
+    },
+    contact: {
+      email: 'rahul.deshmukh@email.com',
+      phone: '+91 98765 44332',
+      linkedin: 'https://linkedin.com/in/rahuldeshmukh'
+    },
+    skills: ['CAD', 'EV Design', 'Manufacturing', 'Project Management'],
+    interests: ['Electric Vehicles', 'Robotics', 'Cricket']
+  },
+  {
+    id: '10',
+    name: 'Sneha Joshi',
+    description: 'School Principal with 15+ years of experience in education management and curriculum design.',
+    photo: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=800',
+    address: 'Alkapuri, Vadodara, Gujarat',
+    coordinates: {
+      longitude: 73.1812,
+      latitude: 22.3072
+    },
+    contact: {
+      email: 'sneha.joshi@email.com',
+      phone: '+91 98765 55667',
+      linkedin: 'https://linkedin.com/in/snehajoshi'
+    },
+    skills: ['Education Management', 'Curriculum Design', 'Leadership', 'Teacher Training'],
+    interests: ['Education Policy', 'Reading', 'Gardening']
   }
 ];

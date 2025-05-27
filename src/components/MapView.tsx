@@ -4,7 +4,8 @@ import { MapPin } from 'lucide-react';
 import type { MapViewState, Profile } from '../types';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiYm9sdHRlbXAiLCJhIjoiY2x2a21kczdiMDY5ZjJscWlvNzBjanJrYyJ9.YyJ0Ax8z1YYgsHfmQJDUgA';
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
+console.log('Mapbox Token:', MAPBOX_TOKEN);
 
 interface MapViewProps {
   selectedProfile: Profile | null;
@@ -32,16 +33,20 @@ const MapView: React.FC<MapViewProps> = ({ selectedProfile, profiles }) => {
   }, [selectedProfile]);
 
   return (
-    <div className="relative h-full w-full rounded-xl overflow-hidden shadow-lg">
+    <div className="relative h-full w-full rounded-xl overflow-hidden shadow-lg border border-gray-200">
       <Map
         {...viewState}
         onMove={evt => setViewState(evt.viewState)}
         mapStyle="mapbox://styles/mapbox/streets-v12"
         mapboxAccessToken={MAPBOX_TOKEN}
         className="h-full w-full"
+        attributionControl={true}
       >
-        <NavigationControl position="top-right" />
-
+        <NavigationControl position="top-right" showCompass={true} showZoom={true} />
+        {/* Add scale and attribution controls for realism */}
+        <div className="absolute bottom-2 left-2 z-10 bg-white/80 px-2 py-1 rounded text-xs text-gray-700 shadow">
+          <span>© Mapbox © OpenStreetMap</span>
+        </div>
         {profiles.map(profile => (
           <Marker
             key={profile.id}
@@ -61,10 +66,10 @@ const MapView: React.FC<MapViewProps> = ({ selectedProfile, profiles }) => {
               }
             `}>
               <div className={`
-                relative p-2 rounded-full
+                relative p-2 rounded-full border-2
                 ${selectedProfile?.id === profile.id
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-white text-gray-700 hover:bg-blue-50 hover:text-blue-500'
+                  ? 'bg-blue-500 text-white border-blue-700'
+                  : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-50 hover:text-blue-500'
                 }
                 shadow-lg transition-all duration-300
               `}>
@@ -90,7 +95,7 @@ const MapView: React.FC<MapViewProps> = ({ selectedProfile, profiles }) => {
                 <img
                   src={popupInfo.photo}
                   alt={popupInfo.name}
-                  className="w-16 h-16 rounded-lg object-cover shadow-sm"
+                  className="w-16 h-16 rounded-lg object-cover shadow-sm border border-gray-200"
                 />
                 <div>
                   <h3 className="font-semibold text-gray-900">{popupInfo.name}</h3>
